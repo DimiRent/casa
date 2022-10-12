@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <form data-multi-step class="multi-step-form">
+    <div class="card" data-step>
+      <h3 class="step-title">HOW MANY BEDROOMS DO YOU NEED?</h3>
+      <div class="form-group">
+        <label for="3bed">3 Beds</label>
+        <input type="radio" name="radio" id="radio">
+      </div>
+      <div class="form-group">
+        <label for="password">4 Beds</label>
+        <input type="radio" name="radio" id="radio">
+      </div>
+      <button type="button" data-next>Next</button>
+    </div>
+    <div class="card" data-step>
+      <h3 class="step-title">WHEN DO YOU NEED TO MOVE?</h3>
+      <div class="form-group">
+        <label for="now">Now</label>
+        <input type="radio" name="radio" id="radio">
+      </div>
+      <div class="form-group">
+        <label for="radio">30 Days</label>
+        <input type="radio" name="radio" id="radio">
+      </div>
+      <div class="form-group">
+        <label for="radio">60 Days</label>
+        <input type="radio" name="radio" id="radio">
+      </div>
+      <button type="button" data-previous>Previous</button>
+      <button type="button" data-next>Next</button>
+    </div>
+    <div class="card" data-step>
+      <h3 class="step-title">Contact Info</h3>
+      <div class="form-group">
+        [rm-guest-cards template='Aspen Welcome Card' location='casafeliz' property='APCF']
+      </div>
+      <button type="button" data-previous>Previous</button>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
